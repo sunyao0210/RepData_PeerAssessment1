@@ -9,7 +9,6 @@ output: html_document
 ## Loading and preprocessing the data
 
 ```r
-setwd("F:/Mooc/Reproducible Research/Project 1")
 data <- read.csv("activity.csv")
 data_waNA <- data[which(data$steps!= "NA"), ]
 ```
@@ -123,7 +122,7 @@ Mean values didn't change as imputation used the average on 5-mi interval
 library(lattice)
 weekdays <- weekdays(as.Date(merged$date))
 data_weekdays <- transform(merged, day = weekdays)
-data_weekdays$wk <- ifelse(data_weekdays$day %in% c("星期六", "星期天"), "weekend", 
+data_weekdays$wk <- ifelse(data_weekdays$day %in% c("Saturday", "Sunday"), "weekend", 
     "weekday")
 average_week <- ddply(data_weekdays, .(interval, wk), summarise, steps = mean(steps))
 
