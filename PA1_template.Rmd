@@ -50,7 +50,6 @@ mean(new_daily_steps$steps)
 median(new_daily_steps$steps)
 daily_steps_1 <- sum(data_waNA$steps)
 daily_steps_2 <- sum(merged$steps)
-diff <- daily_steps_2 -daily_steps_1 []
 ```
 Mean values didn't change as imputation used the average on 5-mi interval
 
