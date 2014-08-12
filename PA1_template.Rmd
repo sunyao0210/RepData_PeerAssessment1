@@ -8,7 +8,6 @@ output: html_document
 
 ## Loading and preprocessing the data
 ```{r}
-setwd("F:/Mooc/Reproducible Research/Project 1")
 data <- read.csv("activity.csv")
 data_waNA <- data[which(data$steps!= "NA"), ]
 ```
