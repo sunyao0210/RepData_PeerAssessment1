@@ -129,4 +129,4 @@ average_week <- ddply(data_weekdays, .(interval, wk), summarise, steps = mean(st
 xyplot(steps ~ interval | wk, data = average_week, layout = c(1, 2), type = "l")
 ```
 
-![plot of chunk unnamed-chunk-5](instructions_fig / sample_panelplot.png) 
+![plot of chunk unnamed-chunk-5](instructions_fig/sample_panelplot.png) 
